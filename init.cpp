@@ -79,8 +79,8 @@ void init() {
 	trainList = (Triple *)calloc(tripleTotal, sizeof(Triple));
 	tripleTotal = 0;
 	while (fscanf(fin, "%d", &trainList[tripleTotal].h) == 1) {
-		tmp = fscanf(fin, "%d", &trainList[tripleTotal].t);
 		tmp = fscanf(fin, "%d", &trainList[tripleTotal].r);
+		tmp = fscanf(fin, "%d", &trainList[tripleTotal].t);
 		freqEnt[trainList[tripleTotal].t]++;
 		freqEnt[trainList[tripleTotal].h]++;
 		freqRel[trainList[tripleTotal].r]++;
